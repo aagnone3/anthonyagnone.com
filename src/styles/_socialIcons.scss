@@ -5,6 +5,11 @@
   margin-bottom: 5rem;
 }
 
+.icons-navbar {
+  font-size: 0.7rem;
+  margin: 0.1rem 0.1rem 0.1rem 0.3rem;
+}
+
 .icons-small {
   font-size: 2rem;
   margin: 0.1rem;
@@ -55,6 +60,10 @@
   @include themify($themes) {
     color: themed("iconBackground")
   }
+}
+
+.icon-external-link {
+  color: white
 }
 
 .brand-icon {

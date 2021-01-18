@@ -25,16 +25,26 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
           <Nav.Link className="ml-2" as={Link} to="/" title="Home">
             Home
           </Nav.Link>
-          <Nav.Link className="ml-2" as={Link} to="/skills" title="Skills">
+          <Nav.Link className="mr-2 ml-2" as={Link} to="/skills" title="Skills">
             Skills
           </Nav.Link>
-          <Link className="mt-2 ml-3" target="_blank" to="https://lifewithdata.org">
+          <Link className="mt-2 mr-2 mb-2 ml-2" target="_blank" to="https://lifewithdata.org">
             Blog
+            <FontAwesomeIcon
+              icon={["fas", "external-link-alt"]}
+              className="icons-navbar icon-external-link"
+              title="External Link"
+            />
           </Link>
-          <Link className="mt-2 ml-3" target="_blank" to="https://lifewithdata.org/newsletter">
+          <Link className="mt-2 mr-2 mb-2 ml-2" target="_blank" to="https://lifewithdata.org/newsletter">
             Newsletter
+            <FontAwesomeIcon
+              icon={["fas", "external-link-alt"]}
+              className="icons-navbar icon-external-link"
+              title="External Link"
+            />
           </Link>
-          <Form className="ml-3 my-auto">
+          <Form className="my-auto ml-2">
             <Form.Check
               type="switch"
               id="custom-switch"
