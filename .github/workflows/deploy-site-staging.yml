@@ -7,8 +7,10 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v2
 
-      - name: obtain node (npm) and install dependencies
+      - name: obtain node (npm)
         uses: actions/setup-node@v1
+
+      - name: install dependencies
         run: npm install
 
       - name: build site
@@ -21,4 +23,3 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         with:
           args: deploy --dir=public
-          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
