@@ -1,0 +1,28 @@
+name: deploy-site-staging
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+
+      - name: obtain node (npm)
+        uses: actions/setup-node@v1
+
+      - name: install dependencies
+        run: npm install
+
+      - name: build site
+        run: npm run build
+
+      - name: deploy site
+        uses: netlify/actions/cli@master
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        with:
+          args: deploy --dir=public --prod
