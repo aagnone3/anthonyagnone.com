@@ -1,0 +1,35 @@
+
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+  border: none;
+  box-shadow: none;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none;
+}
+
+.custom-control-input ~ .custom-control-label {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+// light mode
+.custom-control-input ~ .custom-control-label::before {
+  border-color: $gray-600;
+  background-color: $gray-600;
+}
+
+.custom-switch .custom-control-input ~ .custom-control-label::after {
+  background-color: $white;
+}
+
+// dark mode
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: $black;
+  background-color: $black;
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: $white;
+}

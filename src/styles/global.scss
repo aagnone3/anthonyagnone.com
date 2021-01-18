@@ -1,0 +1,33 @@
+@import "../../static/fonts/fonts.css";
+
+@import "themes";
+@import "themeSwitch";
+@import "socialIcons";
+
+html,
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-display: swap;
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container * {
+  transition: color 0.45s ease-in-out;
+  transition: background 0.45s ease-in-out;
+}
+
+.bg-none {
+  background: rgba(0, 0, 0, 0) !important;
+}
+
+.aurebesh:hover {
+  font-family: "Aurebesh", sans-serif;
+  font-display: swap;
+}
