@@ -46,7 +46,7 @@ export default ({ data }) => {
       <SEO title="Skills" />
       <PageTitle title="Certifications & Skills" />
       <Container className="px-5 mb-5 text-center">
-        <Form className="aurebesh skills-filter">
+        <Form className="skills-filter">
           <FormControl
             className="bg-none search"
             type="text"
