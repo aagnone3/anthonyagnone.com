@@ -1,5 +1,8 @@
-name: simple-build
-on: [push]
+name: deploy-site-staging
+on:
+  push:
+    branches:
+      - develop
 jobs:
   build-site:
     runs-on: ubuntu-latest
