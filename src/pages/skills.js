@@ -44,7 +44,7 @@ export default ({ data }) => {
   return (
     <PageLayout>
       <SEO title="Skills" />
-      <PageTitle title="Certifications & Skills" />
+      <PageTitle title="Skills & Certifications" />
       <Container className="px-5 mb-5 text-center">
         <Form className="skills-filter">
           <FormControl
